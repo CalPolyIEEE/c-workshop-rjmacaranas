@@ -1,7 +1,7 @@
 FROM gitpod/workspace-full
 
 USER root
-RUN apt-get update
+RUN apt-get update && apt-get install -y --no-install-recommends apt-utils
 RUN apt-get install -yq valgrind
 
 USER gitpod
