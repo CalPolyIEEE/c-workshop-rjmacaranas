@@ -1,8 +1,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int good_counter();
-int bad_counter();
+int good_counter(void);
+int bad_counter(void);
 
 int main(void) {
    for(int i = 0; i < 5; i++) {
@@ -13,13 +13,13 @@ int main(void) {
    return EXIT_SUCCESS;
 }
 
-int good_counter() {
+int good_counter(void) {
    static int c = 0;
    c++;
    return c;
 }
 
-int bad_counter() {
+int bad_counter(void) {
   int c = 0;
   c++;
   return c;
