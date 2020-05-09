@@ -8,7 +8,7 @@
 #define CUBE(A) ((A) * (A) * (A))
 
 int main(void) {
-   int result1 = cube(NUMBER_TWO);
+   int result1 = CUBE(NUMBER_TWO);
    printf("result1 = %d\n", result1);
 
    int result2 = add_4(5);
