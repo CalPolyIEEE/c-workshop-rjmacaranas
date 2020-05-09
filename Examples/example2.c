@@ -4,7 +4,7 @@
 
 uint16_t multiply(uint8_t a, uint8_t b) {
    /* explicitly typecast */
-   return (uint32_t)a * (uint32_t)b;
+   return (uint16_t)a * (uint16_t)b;
 }
 
 int main(void) {
